@@ -19,13 +19,13 @@ export default async function Home() {
           </p>
         </div>
 
-        <CrudShowcase />
+        <MyCrudShowcase />
       </div>
     </main>
   );
 }
 
-async function CrudShowcase() {
+async function MyCrudShowcase() {
   const latestPost = await api.post.getLatest.query();
 
   return (
